@@ -69,11 +69,11 @@ Using cURL, you can test your API with the following commands:
 Before testing, be sure the Agamemnon database DOES NOT exist.<br />
  
  &nbsp;&nbsp;If need to delete database, do the following:
- <br />&nbsp;&nbsp;In mongo, type: use Agamemnon
- <br />&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
- <br />&nbsp;&nbsp;In mongo, type: db.dropDatabase()
- <br />&nbsp;&nbsp;Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
-<br /><br />
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;In mongo, type: use Agamemnon
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;In mongo, type: db.dropDatabase()
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
+<br /><br /><br />
 You can test you API by executing Frisby scripts. The Agamemnon database does not exist, do the following:
 
 - Start server
