@@ -33,6 +33,7 @@ Refer to the MongoDB Interactive Shell documentation for more information.
 - Start Mongo
 
 - Start server: node server.js
+
 Should see the server connecting and a statement: Connected to 'Agamemnon' database
 
  
@@ -49,13 +50,13 @@ Using cURL, you can test your API with the following commands:
 Add new entry:
 curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Vic Sage", "alias": "Question", "species": "Human", "abilities": "Great Martial Artist, Detective", "description": "Conspiracy theorist and a little bit paranoid.", "weaknesses": "He is only human."}' http://localhost:3000/characters
 
-Modify entry with an _id value (use a value that exists in your database)
+Modify entry with an _id value (use a value that exists in your database):
 curl -i -X PUT -H 'Content-Type: application/json' -d '{name: "John Stewart", alias: "Green Lantern", species: "Human", abilities: "Wields Oan power ring", description: "Is an architect and veteran U.S. Marine from Detroit, Michigan, who was selected by the Guardians as a backup Green Lantern to then-current Green Lantern Hal Jordan"}' http://localhost:3000/characters/(_id value)
 
 Get all entries:
 curl -i -X GET http://localhost:3000/characters
 
-Get entry with an _id value (use a value that exists in your database)
+Get entry with an _id value (use a value that exists in your database):
 curl -i -X GET http://localhost:3000/characters/(_id value)
 
 Delete entry with an _id value (use a value that exists in your database)
@@ -79,15 +80,15 @@ Justice League entries have been added
 - Go to http://localhost:3000/characters
 
 - Observed characters as follows:
-    Superman
-    Batman
-    Wonder Woman
-    Green Lantern
-    The Flash
-    Martian Manhunter
-    Aquaman
-    Robin
-    Green Arrow
+    -- Superman
+    -- Batman
+    -- Wonder Woman
+    -- Green Lantern
+    -- The Flash
+    -- Martian Manhunter
+    -- Aquaman
+    -- Robin
+    -- Green Arrow
 
 - In another console window, change directory to the test_leagueDatabase folder
 
