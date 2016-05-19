@@ -34,7 +34,7 @@ Refer to the MongoDB Interactive Shell documentation for more information.
 - Start server: node server.js
 
 Should see the server connecting and a statement: Connected to 'Agamemnon' database
- <br />
+ <br /><br />
  *To delete database, do the following:
  <br />In mongo, type: use Agamemnon
  <br />Verify the following is displayed: switched to db Agamemnon
