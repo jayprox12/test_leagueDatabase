@@ -95,29 +95,29 @@ Justice League entries have been added<br />
 - Enter the following commands: <br />
   jasmine-node spec/1_testDELETE_spec.js<br />
   Verify the following is displayed:<br />
-   <br /> Finished in # seconds 
-    3 tests, 128 assertions, 0 failures, 0 skipped<br />
+    &nbsp;&nbsp;&nbsp;Finished in # seconds 
+    <br />&nbsp;&nbsp;&nbsp;3 tests, 128 assertions, 0 failures, 0 skipped<br />
   Open http://localhost:3000/characters<br />
   Verify Batman entry is no longer displayed<br />
   
   
-  jasmine-node spec/2_testGET_spec.js
-  Verify the following is displayed:
-    Finished in # seconds
-    4 tests, 130 assertions, 0 failures, 0 skipped
+  jasmine-node spec/2_testGET_spec.js<br />
+  Verify the following is displayed:<br />
+    &nbsp;&nbsp;&nbsp;Finished in # seconds
+    <br />&nbsp;&nbsp;&nbsp;4 tests, 130 assertions, 0 failures, 0 skipped
     
     
-  jasmine-node spec/3_testPUT_spec.js
-  Verify the following is displayed:
-    Finished in # seconds
-    4 tests, 140 assertions, 0 failures, 0 skipped  
-  Open http://localhost:3000/characters
-  Verify Dick Grayson entry is no longer Robin, and now Nightwing
-  Verify The Flash is no longer Barry Allen, and now Jay Garrick
+  jasmine-node spec/3_testPUT_spec.js<br />
+  Verify the following is displayed:<br />
+    &nbsp;&nbsp;&nbsp;Finished in # seconds
+   <br /> &nbsp;&nbsp;&nbsp;4 tests, 140 assertions, 0 failures, 0 skipped  
+  Open http://localhost:3000/characters<br />
+  Verify Dick Grayson entry is no longer Robin, and now Nightwing<br /><br />
+  Verify The Flash is no longer Barry Allen, and now Jay Garrick<br />
   
   
-  jasmine-node spec/4_testGET_spec.js
-  Verify the following is displayed:
-    Finished in # seconds
-    4 tests, 146 assertions, 0 failures, 0 skipped
+  jasmine-node spec/4_testGET_spec.js<br />
+  Verify the following is displayed:<br />
+    &nbsp;&nbsp;&nbsp;Finished in # seconds
+    <br />&nbsp;&nbsp;&nbsp;4 tests, 146 assertions, 0 failures, 0 skipped
   
