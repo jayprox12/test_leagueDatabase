@@ -36,7 +36,7 @@ Refer to the MongoDB Interactive Shell documentation for more information.
 Should see the server connecting and a statement: Connected to 'Agamemnon' database
 
  
-Testing the API using cURL
+#####Testing the API using cURL
 
 You can test your API before using it in a client application. 
 You can invoke your REST services straight from a browser address bar.
@@ -63,7 +63,7 @@ curl -i -X DELETE http://localhost:3000/characters/(_id value)
 
 
 
-Testing the API using Frisby test files
+#####Testing the API using Frisby test files
 
 You can test you API by executing Frisby scripts. Assuming the Agamemnon database does not exist, do the following:
 
