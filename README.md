@@ -70,17 +70,17 @@ You can test you API by executing Frisby scripts. Assuming the Agamemnon databas
 
 - Start server
 
-- Verify the following statement appears: 
-\nConnected to 'Agamemnon' database
-The 'tob' collection doesn't exist. Creating it with starting entries...
-Justice League entries have been added
+- Verify the following statement appears: <br />
+Connected to 'Agamemnon' database <br />
+The 'tob' collection doesn't exist. Creating it with starting entries...<br />
+Justice League entries have been added<br />
 
 - Open bowser window.
 
 - Go to http://localhost:3000/characters
 
-- Observed characters as follows:
-    Superman,
+- Observed characters as follows: <br />
+    Superman <br />
      Batman,
      Wonder Woman,
      Green Lantern,
