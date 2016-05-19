@@ -71,7 +71,7 @@ You can test you API by executing Frisby scripts. Assuming the Agamemnon databas
 - Start server
 
 - Verify the following statement appears: 
-Connected to 'Agamemnon' database
+\nConnected to 'Agamemnon' database
 The 'tob' collection doesn't exist. Creating it with starting entries...
 Justice League entries have been added
 
@@ -80,15 +80,15 @@ Justice League entries have been added
 - Go to http://localhost:3000/characters
 
 - Observed characters as follows:
-    -- Superman
-    -- Batman
-    -- Wonder Woman
-    -- Green Lantern
-    -- The Flash
-    -- Martian Manhunter
-    -- Aquaman
-    -- Robin
-    -- Green Arrow
+    Superman,
+     Batman,
+     Wonder Woman,
+     Green Lantern,
+     The Flash,
+     Martian Manhunter,
+     Aquaman,
+     Robin,
+     Green Arrow
 
 - In another console window, change directory to the test_leagueDatabase folder
 
