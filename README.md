@@ -34,13 +34,6 @@ Refer to the MongoDB Interactive Shell documentation for more information.
 - Start server: node server.js
 
 Should see the server connecting and a statement: Connected to 'Agamemnon' database
- <br /><br />
- *To delete database, do the following:
- <br />In mongo, type: use Agamemnon
- <br />Verify the following is displayed: switched to db Agamemnon
- <br />In mongo, type: db.dropDatabase()
- <br />Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
-
 
 <br /><br /><br />
  
@@ -72,8 +65,16 @@ Using cURL, you can test your API with the following commands:
 <br /><br /><br />
 
 #####Testing the API using Frisby test files
+<br />
+*Before testing, be sure the Agamemnon database DOES NOT exist.<br />
+ <br /><br />
+ &nbsp;&nbsp;*If need to delete database, do the following:
+ <br />&nbsp;&nbsp;In mongo, type: use Agamemnon
+ <br />&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
+ <br />&nbsp;&nbsp;In mongo, type: db.dropDatabase()
+ <br />&nbsp;&nbsp;Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
 
-You can test you API by executing Frisby scripts. Assuming the Agamemnon database does not exist, do the following:
+You can test you API by executing Frisby scripts. The Agamemnon database does not exist, do the following:
 
 - Start server
 
