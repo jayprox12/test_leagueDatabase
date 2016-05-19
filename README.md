@@ -73,7 +73,7 @@ Before testing, be sure the Agamemnon database DOES NOT exist.<br />
  <br />&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
  <br />&nbsp;&nbsp;In mongo, type: db.dropDatabase()
  <br />&nbsp;&nbsp;Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
-
+<br /><br />
 You can test you API by executing Frisby scripts. The Agamemnon database does not exist, do the following:
 
 - Start server
