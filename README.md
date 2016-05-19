@@ -1,25 +1,24 @@
 # Frisby test on a REST API that uses Node.js, MongoDB, and Express
 
 Before we begin, you will need to have the following installed: Node.js and MongoDB. (To create a REST API with Node.js, Express, and MongoDB, see: https://gist.github.com/iksose/9401758)
-
+<br />
 ####Installing Node.js
 
 Go to http://nodejs.org, and click the Install button.
-Run the installer that you just downloaded. When the installer completes, a message indicates that Node was installed at /usr/local/bin/node and npm was installed at /usr/local/bin/npm.
+Run the installer that you just downloaded. <br />
+When the installer completes, a message indicates that Node was installed at /usr/local/bin/node and npm was installed at /usr/local/bin/npm.<br />
 At this point node.js is ready to use. 
 
-
+<br /><br />
 ####Installing MongoDB
 
 To install MongoDB on your specific platform, refer to the MongoDB QuickStart. 
 
-Once installed, do the following:
-
-Create a /data/db folder for MongoDB’s data and set the appropriate permissions.
+Once installed, create a /data/db folder for MongoDB’s data and set the appropriate permissions.
 
 Refer to the MongoDB Interactive Shell documentation for more information.
 
-
+<br /><br />
 ####Setting up our leagueDatabase
 
 - Pull the files.
@@ -35,7 +34,7 @@ Refer to the MongoDB Interactive Shell documentation for more information.
 - Start server: node server.js
 
 Should see the server connecting and a statement: Connected to 'Agamemnon' database
-
+<br /><br /><br />
  
 #####Testing the API using cURL
 
@@ -46,23 +45,23 @@ http://localhost:3000/characters
 You will only be able to test your GET services this way.
 
 Using cURL, you can test your API with the following commands:
+<br />
+ - Add new entry:
+<br />curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Vic Sage", "alias": "Question", "species": "Human", "abilities": "Great Martial Artist, Detective", "description": "Conspiracy theorist and a little bit paranoid.", "weaknesses": "He is only human."}' http://localhost:3000/characters
 
-Add new entry:
-curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Vic Sage", "alias": "Question", "species": "Human", "abilities": "Great Martial Artist, Detective", "description": "Conspiracy theorist and a little bit paranoid.", "weaknesses": "He is only human."}' http://localhost:3000/characters
+ - Modify entry with an _id value (use a value that exists in your database):
+<br />curl -i -X PUT -H 'Content-Type: application/json' -d '{name: "John Stewart", alias: "Green Lantern", species: "Human", abilities: "Wields Oan power ring", description: "Is an architect and veteran U.S. Marine from Detroit, Michigan, who was selected by the Guardians as a backup Green Lantern to then-current Green Lantern Hal Jordan"}' http://localhost:3000/characters/(_id value)
 
-Modify entry with an _id value (use a value that exists in your database):
-curl -i -X PUT -H 'Content-Type: application/json' -d '{name: "John Stewart", alias: "Green Lantern", species: "Human", abilities: "Wields Oan power ring", description: "Is an architect and veteran U.S. Marine from Detroit, Michigan, who was selected by the Guardians as a backup Green Lantern to then-current Green Lantern Hal Jordan"}' http://localhost:3000/characters/(_id value)
+ - Get all entries:
+<br />curl -i -X GET http://localhost:3000/characters
 
-Get all entries:
-curl -i -X GET http://localhost:3000/characters
+ - Get entry with an _id value (use a value that exists in your database):
+<br />curl -i -X GET http://localhost:3000/characters/(_id value)
 
-Get entry with an _id value (use a value that exists in your database):
-curl -i -X GET http://localhost:3000/characters/(_id value)
+ - Delete entry with an _id value (use a value that exists in your database)
+<br />curl -i -X DELETE http://localhost:3000/characters/(_id value)
 
-Delete entry with an _id value (use a value that exists in your database)
-curl -i -X DELETE http://localhost:3000/characters/(_id value)
-
-
+<br /><br /><br />
 
 #####Testing the API using Frisby test files
 
