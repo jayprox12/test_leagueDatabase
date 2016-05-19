@@ -81,24 +81,24 @@ Justice League entries have been added<br />
 
 - Observed characters as follows: <br />
     Superman <br />
-     Batman,
-     Wonder Woman,
-     Green Lantern,
-     The Flash,
-     Martian Manhunter,
-     Aquaman,
-     Robin,
-     Green Arrow
+    Batman <br />
+    Wonder Woman<br />
+    Green Lantern<br />
+    The Flash<br />
+    Martian Manhunter<br />
+    Aquaman<br />
+    Robin<br />
+    Green Arrow<br />
 
 - In another console window, change directory to the test_leagueDatabase folder
 
-- Enter the following commands: 
-  jasmine-node spec/1_testDELETE_spec.js
-  Verify the following is displayed:
-    Finished in # seconds
-    3 tests, 128 assertions, 0 failures, 0 skipped
-  Open http://localhost:3000/characters
-  Verify Batman entry is no longer displayed
+- Enter the following commands: <br />
+  jasmine-node spec/1_testDELETE_spec.js<br />
+  Verify the following is displayed:<br />
+   <br /> Finished in # seconds 
+    3 tests, 128 assertions, 0 failures, 0 skipped<br />
+  Open http://localhost:3000/characters<br />
+  Verify Batman entry is no longer displayed<br />
   
   
   jasmine-node spec/2_testGET_spec.js
