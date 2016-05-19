@@ -150,13 +150,7 @@ frisby.create("Get a list of the League and store them in placeholders")
                             })
                         .toss(); // Retrieve data on Oliver Queen
                     })
-                .toss();  // Get a list of the updated League roster      
-                })
-            .toss(); // Update Barry Allen to Jay Garrick          
-            })
-        .toss(); // Remove Batman
-        })
-    .toss(); // Update Robin to Nightwing
+                .toss();  // Get a list of the updated League roster  
     })
 .toss(); // Get a list of the League and store them in placeholders
 //================================================================//
