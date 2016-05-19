@@ -1,6 +1,6 @@
 {
     "name": "test-world",
-    "description": "testing a World of Heroes and Villains",
+    "description": "listing Heroes of this world for testing",
     "version": "0.0.1",
     "private": true,
     "dependencies": {
