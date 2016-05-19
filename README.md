@@ -67,7 +67,7 @@ Using cURL, you can test your API with the following commands:
 #####Testing the API using Frisby test files
 
 Before testing, be sure the Agamemnon database DOES NOT exist.<br />
- <br />
+ 
  &nbsp;&nbsp;If need to delete database, do the following:
  <br />&nbsp;&nbsp;In mongo, type: use Agamemnon
  <br />&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
