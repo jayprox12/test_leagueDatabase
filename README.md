@@ -40,15 +40,11 @@ Justice League entries have been added<br />
  
 #####Testing the API using Frisby test files
 
-Before testing, be sure the Agamemnon database DOES NOT exist.<br />
+Before testing, be sure the Agamemnon database is newly created and contains the original entries. If you need to delete the database, refer to Delete Database at the bottom.<br />
  
- &nbsp;&nbsp;If need to delete database, do the following:
- <br />&nbsp;&nbsp;&nbsp;&nbsp;In mongo, type: use Agamemnon
- <br />&nbsp;&nbsp;&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
- <br />&nbsp;&nbsp;&nbsp;&nbsp;In mongo, type: db.dropDatabase()
- <br />&nbsp;&nbsp;&nbsp;&nbsp;Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
-<br /><br /><br />
-You can test you API by executing Frisby scripts. The Agamemnon database does not exist, do the following:
+
+<br /><br />
+You can test you API by executing Frisby scripts. To execute, do the following:
 
 - Start server
 
@@ -131,4 +127,12 @@ Using cURL, you can test your API with the following commands:
 <br />curl -i -X DELETE http://localhost:3000/characters/(_id value)
 
 <br /><br /><br />
+
+#####Delete Database
+
+ &nbsp;&nbsp;To delete a database in mongo, do the following:
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;In mongo, type: use Agamemnon
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;Verify the following is displayed: switched to db Agamemnon
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;In mongo, type: db.dropDatabase()
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;Verify the following is displayed: { "dropped" : "Agamemnon", "ok" : 1 }
   
