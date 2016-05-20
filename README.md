@@ -16,7 +16,7 @@ At this point node.js is ready to use.
 
 To install on a specific platform, Refer to https://docs.mongodb.com/v3.0/tutorial
 
-<br /><br />
+<br />
 ####Setting up our leagueDatabase
 
 - Pull or download the files.
@@ -25,41 +25,19 @@ To install on a specific platform, Refer to https://docs.mongodb.com/v3.0/tutori
 
 - A node_modules folder is created in the test_leagueDatabase folder, and the Express, MongoDB, Jasmine, and Frisby modules are installed in a subfolder of node_modules.
 
-- Start Mongo
+- Start mongod
+
+- Start mongo
 
 - Start server: node server.js
 
-Should see the server connecting and a statement: Connected to 'Agamemnon' database
+- Verify the following statement appears: <br />
+Connected to 'Agamemnon' database <br />
+The 'tob' collection doesn't exist. Creating it with starting entries...<br />
+Justice League entries have been added<br />
 
 <br /><br /><br />
  
-#####Testing the API using cURL
-
-You can test your API before using it in a client application. 
-You can invoke your REST services straight from a browser address bar.
-
-http://localhost:3000/characters
-You will only be able to test your GET services this way.
-
-Using cURL, you can test your API with the following commands:
-<br />
- - Add new entry:
-<br />curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Vic Sage", "alias": "Question", "species": "Human", "abilities": "Great Martial Artist, Detective", "description": "Conspiracy theorist and a little bit paranoid.", "weaknesses": "He is only human."}' http://localhost:3000/characters
-
- - Modify entry with an _id value (use a value that exists in your database):
-<br />curl -i -X PUT -H 'Content-Type: application/json' -d '{name: "John Stewart", alias: "Green Lantern", species: "Human", abilities: "Wields Oan power ring", description: "Is an architect and veteran U.S. Marine from Detroit, Michigan, who was selected by the Guardians as a backup Green Lantern to then-current Green Lantern Hal Jordan"}' http://localhost:3000/characters/(_id value)
-
- - Get all entries:
-<br />curl -i -X GET http://localhost:3000/characters
-
- - Get entry with an _id value (use a value that exists in your database):
-<br />curl -i -X GET http://localhost:3000/characters/(_id value)
-
- - Delete entry with an _id value (use a value that exists in your database)
-<br />curl -i -X DELETE http://localhost:3000/characters/(_id value)
-
-<br /><br /><br />
-
 #####Testing the API using Frisby test files
 
 Before testing, be sure the Agamemnon database DOES NOT exist.<br />
@@ -124,4 +102,33 @@ Justice League entries have been added<br />
   &nbsp;&nbsp;Verify the following is displayed:<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finished in # seconds
     <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 tests, 146 assertions, 0 failures, 0 skipped
+
+<br /><br />
+    
+    #####Testing the API using cURL
+
+You can test your API before using it in a client application. 
+You can invoke your REST services straight from a browser address bar.
+
+http://localhost:3000/characters
+You will only be able to test your GET services this way.
+
+Using cURL, you can test your API with the following commands:
+<br />
+ - Add new entry:
+<br />curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "Vic Sage", "alias": "Question", "species": "Human", "abilities": "Great Martial Artist, Detective", "description": "Conspiracy theorist and a little bit paranoid.", "weaknesses": "He is only human."}' http://localhost:3000/characters
+
+ - Modify entry with an _id value (use a value that exists in your database):
+<br />curl -i -X PUT -H 'Content-Type: application/json' -d '{name: "John Stewart", alias: "Green Lantern", species: "Human", abilities: "Wields Oan power ring", description: "Is an architect and veteran U.S. Marine from Detroit, Michigan, who was selected by the Guardians as a backup Green Lantern to then-current Green Lantern Hal Jordan"}' http://localhost:3000/characters/(_id value)
+
+ - Get all entries:
+<br />curl -i -X GET http://localhost:3000/characters
+
+ - Get entry with an _id value (use a value that exists in your database):
+<br />curl -i -X GET http://localhost:3000/characters/(_id value)
+
+ - Delete entry with an _id value (use a value that exists in your database)
+<br />curl -i -X DELETE http://localhost:3000/characters/(_id value)
+
+<br /><br /><br />
   
