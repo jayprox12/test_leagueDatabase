@@ -2,6 +2,8 @@
 
 Before we begin, you will need to have the following installed: Node.js and MongoDB. (To create a REST API with Node.js, Express, and MongoDB, see: https://gist.github.com/iksose/9401758)
 <br />
+*Express is a lightweight node.js web application framework. It provides the basic HTTP infrastructure that makes it easy to create REST APIs.
+<br />
 ####Installing Node.js
 
 Go to http://nodejs.org, and click the Install button.
@@ -12,20 +14,14 @@ At this point node.js is ready to use.
 <br /><br />
 ####Installing MongoDB
 
-To install MongoDB on your specific platform, refer to the MongoDB QuickStart. 
-
-Once installed, create a /data/db folder for MongoDB’s data and set the appropriate permissions.
-
-Refer to the MongoDB Interactive Shell documentation for more information.
+To install on a specific platform, Refer to https://docs.mongodb.com/v3.0/tutorial
 
 <br /><br />
 ####Setting up our leagueDatabase
 
-- Pull the files.
+- Pull or download the files.
 
 - Open a shell, cd to the test_leagueDatabase directory, and execute the following command to install the express module: npm install
-
-*Express is a lightweight node.js web application framework. It provides the basic HTTP infrastructure that makes it easy to create REST APIs.
 
 - A node_modules folder is created in the test_leagueDatabase folder, and the Express, MongoDB, Jasmine, and Frisby modules are installed in a subfolder of node_modules.
 
