@@ -1,6 +1,6 @@
 # Frisby test on a REST API that uses Node.js, MongoDB, and Express
 
-Before we begin, you will need to have the following installed: Node.js and MongoDB. (To create a REST API with Node.js, Express, and MongoDB, see: https://gist.github.com/iksose/9401758)
+Before we begin, you will need to have the following installed: Node.js and MongoDB. (To create a REST API with Node.js, Express, and MongoDB, see: https://gist.github.com/iksose/9401758. My API was built using this tutorial.)
 <br /><br />
 *Express is a lightweight node.js web application framework. It provides the basic HTTP infrastructure that makes it easy to create REST APIs.
 <br />
@@ -43,17 +43,10 @@ Justice League entries have been added<br />
 Before testing, be sure the Agamemnon database is newly created and contains the original entries. If you need to delete the database, refer to Delete Database at the bottom.<br />
  
 
-<br /><br />
+<br />
 You can test you API by executing Frisby scripts. To execute, do the following:
 
-- Start server
-
-- Verify the following statement appears: <br />
-Connected to 'Agamemnon' database <br />
-The 'tob' collection doesn't exist. Creating it with starting entries...<br />
-Justice League entries have been added<br />
-
-- Open bowser window.
+- Open browser window.
 
 - Go to http://localhost:3000/characters
 
