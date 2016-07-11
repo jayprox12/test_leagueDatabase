@@ -57,28 +57,28 @@ frisby.create("Get a list of the League and store them in placeholders")
 // checks
 //================================================================// 
     frisby.create("Update Robin to Nightwing")
-        .put('http://localhost:3000/characters/' + characterID[7], {name: "Dick Grayson", alias: "Nightwing", species: "Human", abilities: "Peak human conditioning, Master Acrobat, Intimidation, Good Detective, Master Martial Artist, Weapon proficiency, Expert Marksman, Stealth, Expert Escapologist, Tracking", description: "Batman's first sidekick. A circus acrobat, and, with his parents, one of the Flying Graysons. While preparing for a performance, Dick overhears two gangsters attempting to extort protection money from the circus owner. The owner refuses, so the gangsters sabotage the trapeze wires with acid. During the next performance, the trapeze from which Dick's parents are swinging snaps, sending them to their deaths", weaknesses: "He is only human."})
+        .put('http://localhost:3000/characters/' + characterID[6], {name: "Dick Grayson", alias: "Nightwing", species: "Human", abilities: "Peak human conditioning, Master Acrobat, Intimidation, Good Detective, Master Martial Artist, Weapon proficiency, Expert Marksman, Stealth, Expert Escapologist, Tracking", description: "Batman's first sidekick. A circus acrobat, and, with his parents, one of the Flying Graysons. While preparing for a performance, Dick overhears two gangsters attempting to extort protection money from the circus owner. The owner refuses, so the gangsters sabotage the trapeze wires with acid. During the next performance, the trapeze from which Dick's parents are swinging snaps, sending them to their deaths", weaknesses: "He is only human."})
         .expectStatus(200)
         .afterJSON(function(body){
             var parseBody = body;
-            characterName[7] = parseBody.name;
-            characterAlias[7] = parseBody.alias;
-            characterSpecies[7] = parseBody.species;
-            characterAbilities[7] = parseBody.abilities;
-            characterDescription[7] = parseBody.description;
-            characterWeakness[7] = parseBody.weaknesses;
+            characterName[6] = parseBody.name;
+            characterAlias[6] = parseBody.alias;
+            characterSpecies[6] = parseBody.species;
+            characterAbilities[6] = parseBody.abilities;
+            characterDescription[6] = parseBody.description;
+            characterWeakness[6] = parseBody.weaknesses;
                 expect(parseBody.name).toBe("Dick Grayson"); 
-                expect(characterName[7]).toBe("Dick Grayson"); 
+                expect(characterName[6]).toBe("Dick Grayson"); 
                 expect(parseBody.alias).toBe("Nightwing"); 
-                expect(characterAlias[7]).toBe("Nightwing"); 
+                expect(characterAlias[6]).toBe("Nightwing"); 
                 expect(parseBody.species).toBe("Human");
-                expect(characterSpecies[7]).toBe("Human");
+                expect(characterSpecies[6]).toBe("Human");
                 expect(parseBody.abilities).toBe("Peak human conditioning, Master Acrobat, Intimidation, Good Detective, Master Martial Artist, Weapon proficiency, Expert Marksman, Stealth, Expert Escapologist, Tracking"); 
-                expect(characterAbilities[7]).toBe("Peak human conditioning, Master Acrobat, Intimidation, Good Detective, Master Martial Artist, Weapon proficiency, Expert Marksman, Stealth, Expert Escapologist, Tracking"); 
+                expect(characterAbilities[6]).toBe("Peak human conditioning, Master Acrobat, Intimidation, Good Detective, Master Martial Artist, Weapon proficiency, Expert Marksman, Stealth, Expert Escapologist, Tracking"); 
                 expect(parseBody.description).toBe("Batman's first sidekick. A circus acrobat, and, with his parents, one of the Flying Graysons. While preparing for a performance, Dick overhears two gangsters attempting to extort protection money from the circus owner. The owner refuses, so the gangsters sabotage the trapeze wires with acid. During the next performance, the trapeze from which Dick's parents are swinging snaps, sending them to their deaths"); 
-                expect(characterDescription[7]).toBe("Batman's first sidekick. A circus acrobat, and, with his parents, one of the Flying Graysons. While preparing for a performance, Dick overhears two gangsters attempting to extort protection money from the circus owner. The owner refuses, so the gangsters sabotage the trapeze wires with acid. During the next performance, the trapeze from which Dick's parents are swinging snaps, sending them to their deaths");
+                expect(characterDescription[6]).toBe("Batman's first sidekick. A circus acrobat, and, with his parents, one of the Flying Graysons. While preparing for a performance, Dick overhears two gangsters attempting to extort protection money from the circus owner. The owner refuses, so the gangsters sabotage the trapeze wires with acid. During the next performance, the trapeze from which Dick's parents are swinging snaps, sending them to their deaths");
                 expect(parseBody.weaknesses).toBe("He is only human.");
-                expect(characterWeakness[7]).toBe("He is only human.");
+                expect(characterWeakness[6]).toBe("He is only human.");
 //================================================================//
 // Updating object Robin to Nightwing. Updating the array slot 
 // Robin was stored in.
