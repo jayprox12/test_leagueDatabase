@@ -21,11 +21,15 @@ To install on a specific platform, Refer to https://docs.mongodb.com/v3.0/tutori
 
 - Pull or download the files.
 
-- Open a shell, cd to the test_leagueDatabase directory, and execute the following command to install the express module: npm install
+- Open a terminal window, cd to the test_leagueDatabase directory, and execute the following command to install the express module: npm install
 
-- A node_modules folder is created in the test_leagueDatabase folder, and the Express, MongoDB, Jasmine, and Frisby modules are installed in a subfolder of node_modules.
+- A node_modules folder is created in the test_leagueDatabase folder, and the Express, MongoDB, Jasmine, and Frisby modules are installed in a subfolder of node_modules. (NOTE: This is using Express version 3. The following test may not work in Express version 4)
 
-- Start mongod
+- Execute the following: npm install -g jasmine-node. Verify jasmine-node is installed in /usr/local/bin/jasmine-node
+
+- In the test_leagueDatabase directory, create a folder named "data"
+
+- Start mongod, by entering: mongod --dbpath data/
 
 - Start mongo
 
@@ -90,7 +94,7 @@ You can test you API by executing Frisby scripts. To execute, do the following:
   jasmine-node spec/4_testGET_spec.js<br />
   &nbsp;&nbsp;Verify the following is displayed:<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finished in # seconds
-    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 tests, 146 assertions, 0 failures, 0 skipped
+    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 tests, 146 assertions, 0 failures, 0 skipped
 
 <br /><br />
     

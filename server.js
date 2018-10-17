@@ -4,11 +4,12 @@ var express = require('express'),
 
 var app = express();
 
-
+// REMOVED IN EXPRESS 4
 app.configure(function () {
     app.use(express.logger('dev')); /* 'default', 'short', 'tiny', 'dev' */
    app.use(express.bodyParser());
-});
+});  
+// REMOVED IN EXPRESS 4. See: https://github.com/expressjs/express/wiki/Migrating-from-3.x-to-4.x
 
 app.get('/characters', character.findAll);
 app.get('/characters/:id', character.findById);
